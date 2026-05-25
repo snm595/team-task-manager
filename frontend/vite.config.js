@@ -3,12 +3,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   server: {
     host: "0.0.0.0"
   },
   preview: {
     host: "0.0.0.0",
-    allowedHosts: ["team-task-manager-production-15e1.up.railway.app"]
+    allowedHosts: true
   }
 })
